@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  text-align: center;
+  
   font-family: fantasy;
-  background: grey;
+  background: black;
+  color: darkgreen;
 }
 
 .MandiRexLogoAtTop {
@@ -11,52 +12,46 @@ body {
   color: darkgreen;
   padding: 5px;
   margin: 0px;
-  float: left;
-  width: 100%;
-  font: 275;
-}
-
-
-
-.col {
-  background: #333;
-  padding: .5%;
-  border-radius: 5px;
-  margin: .5%;
-  float: left;
-  width: 31%;
-  color: white;
-}
-
-.nav {
-  
+  font-size: 275%;
   text-align: center;
-  height: 40px;
-  color: black;
-  width: 100%;
-}
-.nav ul {
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
 }
 
-.nav ul li {
-  list-style: none;
-  color: darkgreen;
-}
 
-.nav ul li a{
-  font-family: fantasy;
-  color: darkgreen;
-  text-decoration: none;
-  float: left;
-  display: block;
-  padding: 10px 70px;
+
+div#content{
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  height: 70px;
 }
-.nav ul li a:hover {
-  color: black;
+.nav{
+    display: block;
+    width: 100%;
+    border:1px solid darkgreen;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-size: 0;
+}
+.nav li{
+    display:inline-block;
+    width: 20%;
+    font-size: 16px;
+}
+.nav a{
+    color: darkgreen;
+    display: block;
+    padding:20px;
+    background-color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav a:hover {
+	color: green;
 }
 
 
@@ -104,4 +99,17 @@ body {
   color: black;
   text-decoration: none;
 }
+
+h2{
+  color: dimgray;
+  text-align: center;
+}
+p{
+  color: dimgray;
+  margin: 10px;
+}
+
+
+
+
 
