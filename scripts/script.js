@@ -1,1 +1,3 @@
-window.alert("test");
+function test() {
+    window.alert("test");
+}
