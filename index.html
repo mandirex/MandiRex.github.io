@@ -1,14 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Inf Groep 4</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<head>
+		<title>DeInfoPlaneet.nl | Home</title>
+		<link href="styles/dicksstyles.css" rel="stylesheet" type="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="Op deze website vind je informatie over de planeten in ons zonnestelsel." />
+		<meta name="keywords" content="Planeten, zon, mercurius, venus, aarde, mars, jupiter, uranus, neptunus, info, informatie" />
 
-</head>
-<body>
-	<p>Dit is een test site voor de presentatie van het groepje dat verantwoordelijk is voor het installeren van verschillende OS's op de school computers.</p>
-</body>
+		<script src="scripts/indexScript.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Welkom op DeInfoPlaneet.nl</h1>
+			<h3>Wanneer zit je hier goed?</h3>
+			<p>Je zit hier op de goede plek wanneer je wat wilt leren over ons zonnestelsel of als je gewoon nieuwsgierig bent naar dit onderwerp.</p>
+			<h3>Fun & Feitjes:</h3>
+			<p><a href="dick5funenfeitjes.html">Hier is een pagina met leuke dingen (zoals een programmatje om jouw gewicht op een andere planeet te bepalen) en meer feitjes over ons zonnestelsel in het algemeen.</a></p>
+			<h3>Hoe navigeer je op onze site?</h3>
+			<p>Om naar een planeet te gaan klik je hieronder op een hemellichaam waarover je meer te weten wilt komen. 
+			Wanneer je dan op een planeet bent kun je altijd terug naar de homepage door naar boven te scrollen en op de knop "Terug naar de Home Page" te drukken.
+			Als je vanuit een planeet een reis wil maken naar een andere planeet kun je onderaan de pagina met de navigatieknoppen naar een andere planeet "springen".</p>
+		</header>
+		<nav>
+			<img id="zonnestelsel" src="images/zonnestelsel.jpg" alt="Navigatie plaatje" width="100%" height="100%" usemap="#planetenmap">
+			<map name="planetenmap">
+				<area id="zon" shape="rect" coords="0,0,0,0" alt="Zon" href="dick1zon.html"></area>      				<!--  De coordinaten worden door javascript geregeld om -->
+				<area id="mercurius" shape="rect" coords="400,470,20" alt="Mercurius" href="dick3mercurius.html"></area><!--  te passen op elk formaat van de afbeeldingen -->
+				<area id="venus" shape="rect" coords="0,0,0" alt="Venus" href="nigel2venus.html"></area>
+				<area id="aarde" shape="rect" coords="0,0,0" alt="Aarde" href="dick2aarde.html"></area>
+				<area id="mars" shape="rect" coords="0,0,0" alt="Mars" href="nigel1mars.html"></area>
+				<area id="jupiter" shape="rect" coords="0,0,0" alt="Jupiter" href="bas1jupiter.html"></area>
+				<area id="saturnus" shape="rect" coords="0,0,0" alt="Saturnus" href="bas2saturnus.html"></area>
+				<area id="uranus" shape="rect" coords="0,0,0" alt="Uranus" href="bas3uranus.html"></area>
+				<area id="neptunus" shape="rect" coords="0,0,0" alt="Neptunus" href="nigel3neptunus.html"></area>
+			</map >
+
+			<img onclick="randomPlaneet()" src="images/random.png" class="randomKnop" alt="random planeet knop" width="5%" height="5%"><br>
+			<p id="centerText" onclick="randomPlaneet()" >Random Planeet</p>
+		</nav>
+		<footer>
+			<h3>&copy; Informatica Groep 5, 2018 | Dick, Bas & Nigel</h3>
+		</footer>
+		
+		
+	</body>
+
+
 </html>

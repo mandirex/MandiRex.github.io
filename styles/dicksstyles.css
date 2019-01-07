@@ -1,0 +1,159 @@
+/* Dicks stijlen, Worden gebruikt voor de index en voor de planeten met dick ervoor */
+
+
+/*De stijl voor de h1, de grote tekst*/
+h1 {
+	text-align: center;
+
+}
+
+
+/*De stijl voor de h4. Hier heb ik de kleur en het lettertype van aangepast*/
+h4 {
+	font-size: 100%;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-weight: bold;
+}
+
+/*De stijl voor een tekst element, De kleur is wit gemaakt en de afstand tussen regels is vergroot*/
+p {
+	font-size: 90%;
+	text-align: justify;
+	line-height: 140%;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+
+
+/* Zorgt ervoor dat elk linkje (dat niet een knop is naar de homepage) wit wordt gekleurd en dikgedrukt wordt met een streepje eronder*/
+a{
+	font-weight: bold;
+	text-decoration: underline;
+	color: white;
+}
+
+
+/* Zorgt ervoor dat elk element waarop de class="symbol" aanwezig is, dikgedrukt wordt en een grote afstand tussen de regels krijgt*/
+.symbol{
+	font-weight: bold;
+	font-size: 110%;
+	line-height: 200%;
+}
+
+
+/* Deze stijl wordt toegepast wanneer iemand NIET over de link "hover"*/
+a.homepage{
+    margin: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	font-family: Arial, Helvetica, Sans-Serif;
+	
+	border-style: solid;
+	border-width: .3em;
+	border-radius: 20px;
+	border-color: white;
+
+}
+
+/*Dit is de stijl die zorgt voor de achtergrond op onze pagina, de sterretjes, ook wordt de achtergrond niet herhaald en staat hij zodat hij de pagina opvuld*/
+html {
+	background-image: url("../images/sterren.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*Kleur van de tekst op de pagina wit maken*/
+	color: #ffffff;
+}
+
+/*Dit is de stijl voor een item in een lijstje, de kleur is wit gemaakt en het lettertype aangepast.*/
+ul {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 85%;
+}
+
+
+/*Dit is een stijl die wordt toegevoegd met de class="", dit zorgt ervoor dat de video in het midden staat en er geen tekst langs komt te staan*/
+.vid{
+	display: block;
+	margin: 0 auto;
+}
+
+/*Stijl voor de knop vooruit, wordt aan de rechter kant van het scherm geplaatst*/
+h6#vooruit{
+	float: right;
+}
+/*Stijl voor de knop terug, wordt aan de linker kant van het scherm geplaatst*/
+h6#terug{
+	float: left;
+}
+/*Stijl voor de navigatie balk onderaan de pagina*/
+div.navigatieOnderaan{
+	clear: both;
+	font-size: 200%;
+	line-height: 140%;
+	height: 20px;
+}
+
+/*Zorgt ervoor dat het plaatje van de ranomd knop in het midden staat*/
+img.randomKnop {
+	display: block;
+	margin:0 auto;
+
+}
+
+/*Centreert alles met het id van centerText*/
+#centerText{
+	text-align: center;
+}
+
+table.planetenVergelijking{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 1em;
+	color: white;
+	border-collapse: separate;
+	border-spacing: 1em 0px;
+
+}
+
+/*Maakt een grote header*/
+table.planetenVergelijking th {
+	float: left;
+	font-size: 100%;
+	font-weight: bold;
+
+}
+
+/* Zet de bovenste balk in een dikgedrukte tekst*/
+table.planetenVergelijking tr.bovenbalk td{
+	font-weight: bold;
+	border-bottom: 1px solid white;
+}
+
+form.form {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: .8em;
+	line-height: 140%;	
+}
+
+footer h3{
+	text-align: center;
+	color: black;
+}
+
+footer {
+	background-color: white;
+}
+/* form.form [type=number] {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	border-radius: 2px;
+}
+form.form [type=button] {
+	background-color: white;
+	color: black;
+} */
+
+
+

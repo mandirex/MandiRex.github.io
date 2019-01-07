@@ -1,0 +1,27 @@
+table.issVergelijking{
+	background-color: black;
+	color: white;
+	border-collapse: collapse;
+	border: 0.2em solid black;
+
+}
+
+body{
+	background-color: black;
+}
+
+
+table.issVergelijking th{
+	font-weight: bold;
+	font-size: 300%;
+}
+table.issVergelijking tr.bovenbalk{
+	font-weight: bold;
+	font-size: 140%;
+}
+table.issVergelijking td {
+
+	border: 0.1em solid white;
+	border-radius: 0.2em;
+
+}

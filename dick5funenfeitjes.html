@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+	<head>
+		<!--Verandert de titel van de pagina-->
+		<title>DeInfoPlaneet.nl | Fun & Feitjes</title>
+		<!--Linkt naar de style sheet die ervoor zorgt dat we een achtergrond hebben-->
+		<link href="styles/dicksstyles.css" rel="stylesheet" type="text/css">
+		<!--geeft aan welke karakter set we willen gebruiken (utf-8 is het meest normale in Nederland)-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--Geeft een beschrijving zodat de zoekmachine deze kan laten zien aan de zoeker-->
+		<meta name="description" content="Fun & Feitjes pagina van DeInfoPlaneet.nl" />
+		<!--De keywords, ofwel zoekwoorden voor deze pagina. De zoekmachine zoals google zoekt hierop-->
+		<meta name="keywords" content="Planeten, zonnestelsel, vergelijking" />
+		<script src="scripts/berekenGewicht.js"></script>  	<!-- Het javascript script dat het werk doet om het gewicht van iemand op een
+															andere planeeet uit te rekenen-->
+	</head>
+	<body>
+
+
+		<h1>Fun & Feitjes</h1>
+		
+		<a href="index.html" class="homepage">&#8678; Terug naar de Home Page</a><br>  <!--Knop terug naar de homepage-->
+
+		<h3>Index:</h3>
+		<p>
+			<ul>
+				<li><a href="#planeetgewicht">Bepaal jouw gewicht op een andere planeet</a></li>
+				<li><a href="#tabel">Tabel met info over alle planeten in ons zonnestelsel</a></li>
+			</ul>
+		</p>
+
+		<section>
+			<article>  <!-- STUKJE MET HET PROGRAMMATJE OM JOUW GEWICHT TE VERGELIJKING -->
+				<h3 id="planeetgewicht">- Bepaal hier jouw gewicht op een andere planeet:</h3>
+	
+				<form class="form" name="formGewichtBepalen">
+					<strong>Werkt nog niet met Internet Explorer!!!</strong><br> 
+					Wat is jouw gewicht op aarde?<br> <input type="number" name="gewichtAarde">KG<br><br>
+					Op welke planeet wil je jouw gewicht weten?<br>
+					<input type="radio" name="planeet" value="0">De zon<br>
+					<input type="radio" name="planeet" value="1">Mercurius<br>
+					<input type="radio" name="planeet" value="2">Venus<br>
+					<input type="radio" name="planeet" value="3">Aarde<br>
+					<input type="radio" name="planeet" value="4">Mars<br>
+					<input type="radio" name="planeet" value="5">Jupiter<br>
+					<input type="radio" name="planeet" value="6">Saturnus<br>
+					<input type="radio" name="planeet" value="7">Uranus<br>
+					<input type="radio" name="planeet" value="8">Neptunus<br>
+
+
+					<input type="button" value="Bereken mijn gewicht!" onClick="bereken()">
+				</form>
+				<p id="uitkomst"></p>
+
+			</article>
+		
+			<article>
+				<h3 id="tabel">- Hier is een tabel met info over alle planeten in ons zonnestelsel:</h3>
+
+
+				<table class="planetenVergelijking">
+				
+					<th>Tabel:</th>
+					<tr class="bovenbalk">
+						<td>Naam hemellichaam:</td>       		<!-- Naam -->
+						<td>Symbool:</td>						<!-- Symbool -->	
+						<td>Omlooptijd om de zon:</td>			<!-- Tijd voor om de zon draaien -->
+						<td>Rotatietijd om eigen as:</td>		<!-- Tijd voor draai om eigen as -->
+						<td>Afstand tot de zon:</td>			<!-- Afstand tot de zon -->
+						<td>Straal:</td>						<!-- Straal -->
+						<td>Valversnelling:</td>				<!-- Valversnelling -->
+						<td>Massa:</td>							<!-- Massa -->
+						<td>Solide ondergrond:</td>				<!-- Solid ondergrond (ja of nee) -->
+					</tr>
+					<tr>   	<!-- De zon-->
+						<td><a href="dick1zon.html">De zon</a></td>
+						<td id="centerText">&#9737;</td>
+						<td>-</td>
+						<td>25 dagen</td>
+						<td>-</td>
+						<td>0,7*10<sup>6</sup> km</td>
+						<td>274m/s<sup>2</sup></td>
+						<td>1,99 *10<sup>30</sup> kg</td>
+						<td id="centerText">✗</td>
+					</tr>
+					<tr>  	<!-- Mercurius -->
+						<td><a href="dick3mercurius.html">Mercurius</a></td>
+						<td id="centerText">&#9791;</td>
+						<td>88 dagen</td>
+						<td>58,7 dagen</td>
+						<td>57,9 * 10<sup>6</sup> km</td>
+						<td>2,4*10<sup>3</sup> km</td>
+						<td>3,7 m/s<sup>2</sup></td>
+						<td>0,33 * 10<sup>24</sup> kg</td>
+						<td id="centerText">✓</td>
+					</tr>
+					<tr>  	<!-- Venus -->
+						<td><a href="nigel2venus.html">Venus</a></td>
+						<td id="centerText">&#9792;</td>
+						<td>224,7 dagen</td>
+						<td>243 dagen</td>
+						<td>108,2 * 10<sup>6</sup> km</td>
+						<td>6,05 * 10<sup>3</sup> km</td>
+						<td>8,87 m/s<sup>2</sup></td>
+						<td>4,87 * 10<sup>24</sup> kg</td>
+						<td id="centerText">✓</td>
+					</tr>
+					<tr> 	<!-- Aarde -->
+						<td><a href="dick2aarde.html">Aarde</a></td>
+						<td id="centerText">&#9793;</td>
+						<td>1 aards jaar</td>
+						<td>1 aardse dag</td>
+						<td>149,6 * 10<sup>6</sup> km</td>
+						<td>6,37 * 10<sup>3</sup> km</td>
+						<td>9,81 m/s<sup>2</sup></td>
+						<td>5,97 * 10<sup>24 kg</sup></td>
+						<td id="centerText">✓</td>
+					</tr>
+					<tr>	<!-- Mars -->
+						<td><a href="nigel1mars.html">Mars</a></td>
+						<td id="centerText">&#9794;</td>
+						<td>687 dagen</td>
+						<td>1,03 dagen</td>
+						<td>227,9 * 10<sup>6</sup> km</td>
+						<td>3,4 * 10<sup>3</sup> km</td>
+						<td>3,7 m/s<sup>2</sup></td>
+						<td>0,64 * 10<sup>24</sup> kg</td>
+						<td id="centerText">✓</td>
+					</tr>
+					<tr>	<!-- Jupiter -->
+						<td><a href="bas1jupiter.html">Jupiter</a></td>
+						<td id="centerText">&#9795;</td>
+						<td>11,9 jaar</td>
+						<td>0.41 dagen</td>
+						<td>778,5 * 10<sup>6</sup> km</td>
+						<td>69,9 * 10<sup>3</sup> km</td>
+						<td>24,9 m/s<sup>2</sup></td>
+						<td>19 * 10<sup>26</sup> kg</td>
+						<td id="centerText">✗</td>
+					</tr>
+					<tr>	<!-- Saturnus -->
+						<td><a href="bas2saturnus.html">Saturnus</a></td>
+						<td id="centerText">&#9796;</td>
+						<td>29,5 jaar</td>
+						<td>0,44 dagen</td>
+						<td>1,4 * 10<sup>9</sup> km</td>
+						<td>58,2 * 10<sup>3</sup> km</td>
+						<td>10,4 m/s<sup>2</sup></td>
+						<td>568 * 10<sup>24</sup> kg</td>
+						<td id="centerText">✗</td>
+					</tr>
+					<tr>	<!-- Uranus -->
+						<td><a href="bas3uranus.html">Uranus</a></td>
+						<td id="centerText">&#9797;</td>
+						<td>84 jaar</td>
+						<td>0,72 dagen</td>
+						<td>2,9 * 10<sup>9</sup> km</td>
+						<td>25,4 * 10<sup>3</sup> km</td>
+						<td>8,9 m/s<sup>2</sup></td>
+						<td>86,8 * 10<sup>24</sup> kg</td>
+						<td id="centerText">✗</td>
+					</tr>
+					<tr>	<!-- Neptunus -->
+						<td><a href="nigel3neptunus.html">Neptunus</a></td>
+						<td id="centerText">&#9798;</td>
+						<td>164,8 jaar</td>
+						<td>0,67 dagen</td>
+						<td>4,5 * 10<sup>9</sup> km</td>
+						<td>24,6 * 10<sup>3</sup> km</td>
+						<td>11,2 m/s<sup>2</sup></td>
+						<td>102,4 * 10<sup>24</sup> kg</td>
+						<td id="centerText">✗</td>
+					</tr>
+
+				
+			</table>
+			</article>
+			
+
+	</body>
+</html>

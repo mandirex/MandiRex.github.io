@@ -1,0 +1,72 @@
+/* Dit is de algemene lay-out van Bas' planeten */
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+h3 {
+	color: white;
+	font-weight: bold;
+	font-size: 100%;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+h4 {
+	font-size: 100%;
+	text-align: justify;
+	line-height: 140%;
+	color: white;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+p{
+	font-size: 80%;
+	text-align: justify;
+	line-height: 140%;
+	color: white;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+li {
+	font-size: 85%;
+	text-align: justify;
+	line-height: 130%;
+	color: white;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+a{
+	font-size: 85%;
+	color: white;
+	font-family: Arial, Helvetica, Sans-Serif;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: white;
+	font-size: 100.5%;
+}
+
+html {
+	background-image: url("../images/sterren.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a.homepage{
+    margin: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	font-family: Arial, Helvetica, Sans-Serif;
+	
+	border-style: solid;
+	border-width: .3em;
+	border-radius: 20px;
+	border-color: white;
+}
+
